@@ -1,1 +1,1 @@
-from ._meson_test import pow1000
+from ._meson_test import square

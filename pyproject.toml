@@ -12,3 +12,15 @@ authors = [
 ]
 #maintainers = ['Oscar Benjamin']
 requires-python = '>=3.8'
+
+[tool.spin]
+package = "meson_test"
+
+[tool.spin.commands]
+
+"Build" = [
+    "spin.cmds.meson.build",
+    "spin.cmds.meson.test",
+    "spin.cmds.build.sdist",
+    "spin.cmds.pip.install",
+]
